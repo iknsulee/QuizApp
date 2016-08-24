@@ -16,11 +16,14 @@ public class MainActivity extends AppCompatActivity {
 
     public void submitAnswer(View view) {
         Context context = getApplicationContext();
+
         String toastMessage = "Result";
         toastMessage += "\nQuiz1: correct";
         toastMessage += "\nQuiz2: wrong answer";
-        toastMessage += "\naaaaaaaaaa";
-        toastMessage += "\naaaaaaaaaa";
+        toastMessage += "\nQuiz3: correct";
+        toastMessage += "\nQuiz4: wrong answer";
+        toastMessage += "\nQuiz5: correct";
+
         CharSequence text = toastMessage;
         int duration = Toast.LENGTH_LONG;
 
