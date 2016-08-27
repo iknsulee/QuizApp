@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Quiz App</string>
+    <string name="quiz1">Quiz1: What animal has wings but cannot fly?</string>
+    <string name="quiz2">Quiz2: What is the name of the latest android operating system?</string>
+    <string name="quiz3">Quiz3: What layout arranges its children in a single column or a single row on android?</string>
+    <string name="quiz4">Quiz4: Who invented google?</string>
 </resources>
