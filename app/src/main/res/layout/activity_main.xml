@@ -22,19 +22,23 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <CheckBox
+                android:id="@+id/check_penguin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Penguin" />
 
             <CheckBox
+                android:id="@+id/check_ostrich"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Ostrich" />
 
             <CheckBox
+                android:id="@+id/check_eagle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="eagle" />
@@ -44,31 +48,91 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Quiz1: What is the name of the latest android operating system?" />
+            android:text="Quiz2: What is the name of the latest android operating system?" />
 
-        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        <RadioGroup
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/radio_pirates"
+                android:id="@+id/radio_lollipop"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Lollipop" />
 
             <RadioButton
-                android:id="@+id/radio_ninjas"
+                android:id="@+id/radio_marshmallow"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Marshmallow" />
 
             <RadioButton
-                android:id="@+id/radio_ninjas1"
+                android:id="@+id/radio_nougat"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nougat" />
         </RadioGroup>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz3: What layout arranges its children in a single column or a single row on android?" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radio_linear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LinearLayout" />
+
+            <RadioButton
+                android:id="@+id/radio_relative"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RelativeLayout" />
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Quiz4: Who invented google?" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="5dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/check_larry_page"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Larry Page" />
+
+            <CheckBox
+                android:id="@+id/check_sergey_brin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sergey Brin" />
+
+            <CheckBox
+                android:id="@+id/check_steve_jobs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Steve Jobs" />
+
+
+        </LinearLayout>
+
 
         <Button
             android:layout_width="wrap_content"
