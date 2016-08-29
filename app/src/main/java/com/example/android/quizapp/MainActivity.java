@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
+import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
@@ -55,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         boolean hasBoxSteveJobs = checkBoxSteveJobs.isChecked();
         boolean quizResult;
 
-        if ((hasLarryPage == true) && (hasBoxSergeyBrin == true) && (hasBoxSteveJobs == false)) {
+        if ((hasLarryPage) && (hasBoxSergeyBrin) && (!hasBoxSteveJobs)) {
             score += 1;
             quizResult = true;
         } else {
@@ -72,15 +73,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String getQuiz3ResultMessage() {
-        // radio button
-        RadioButton radioButtonLinear = (RadioButton) findViewById(R.id.radio_linear);
-        RadioButton radioButtonRelative = (RadioButton) findViewById(R.id.radio_relative);
 
-        boolean hasLinear = radioButtonLinear.isChecked();
-        boolean hasRelative = radioButtonRelative.isChecked();
+        EditText editTextAnswer = (EditText) findViewById(R.id.edit_text_quiz3_answer);
+        String answer = editTextAnswer.getText().toString();
 
         boolean quizResult;
-        if ((hasLinear == true) && (hasRelative == false)) {
+        if (answer.compareTo("LinearLayout") == 0) {
             score += 1;
             quizResult = true;
         } else {
