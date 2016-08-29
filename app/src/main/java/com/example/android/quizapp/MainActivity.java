@@ -1,9 +1,8 @@
 package com.example.android.quizapp;
 
 import android.content.Context;
-import android.support.annotation.NonNull;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
@@ -57,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
         boolean quizResult;
 
         if ((hasLarryPage) && (hasBoxSergeyBrin) && (!hasBoxSteveJobs)) {
-            score += 1;
+            score++;
             quizResult = true;
         } else {
             quizResult = false;
@@ -65,9 +64,9 @@ public class MainActivity extends AppCompatActivity {
 
         String quizMessage = "";
         if (quizResult) {
-            quizMessage += "Quiz4 is right!";
+            quizMessage += getString(R.string.quiz4_right_message);
         } else {
-            quizMessage += "Quiz4 is wrong!";
+            quizMessage += getString(R.string.quiz4_wrong_message);
         }
         return quizMessage;
     }
@@ -78,8 +77,8 @@ public class MainActivity extends AppCompatActivity {
         String answer = editTextAnswer.getText().toString();
 
         boolean quizResult;
-        if (answer.compareTo("LinearLayout") == 0) {
-            score += 1;
+        if (answer.equalsIgnoreCase("LinearLayout")) {
+            score++;
             quizResult = true;
         } else {
             quizResult = false;
@@ -87,9 +86,9 @@ public class MainActivity extends AppCompatActivity {
 
         String quizMessage = "";
         if (quizResult) {
-            quizMessage += "Quiz3 is right!";
+            quizMessage += getString(R.string.quiz3_right_message);
         } else {
-            quizMessage += "Quiz3 is wrong!";
+            quizMessage += getString(R.string.quiz3_wrong_message);
         }
         return quizMessage;
     }
@@ -105,7 +104,7 @@ public class MainActivity extends AppCompatActivity {
         boolean hasNougat = radioButtonNougat.isChecked();
         boolean quizResult;
         if ((hasLollipop == false) && (hasMarshmallow == false) && (hasNougat == true)) {
-            score += 1;
+            score++;
             quizResult = true;
         } else {
             quizResult = false;
@@ -113,9 +112,9 @@ public class MainActivity extends AppCompatActivity {
 
         String quizMessage = "";
         if (quizResult) {
-            quizMessage += "Quiz2 is right!";
+            quizMessage += getString(R.string.quiz2_right_message);
         } else {
-            quizMessage += "Quiz2 is wrong!";
+            quizMessage += getString(R.string.quiz2_wrong_message);
         }
         return quizMessage;
     }
@@ -132,7 +131,7 @@ public class MainActivity extends AppCompatActivity {
         boolean quizResult;
 
         if ((hasPenguin == true) && (hasOstrich == true) && (hasEagle == false)) {
-            score += 1;
+            score++;
             quizResult = true;
         } else {
             quizResult = false;
@@ -140,9 +139,9 @@ public class MainActivity extends AppCompatActivity {
 
         String quizMessage = "";
         if (quizResult) {
-            quizMessage += "Quiz1 is right!";
+            quizMessage += getString(R.string.quiz1_right_message);
         } else {
-            quizMessage += "Quiz1 is wrong!";
+            quizMessage += getString(R.string.quiz1_wrong_message);
         }
         return quizMessage;
     }

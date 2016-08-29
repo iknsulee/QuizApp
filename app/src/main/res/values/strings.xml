@@ -4,4 +4,12 @@
     <string name="quiz2">Quiz2: What is the name of the latest android operating system?</string>
     <string name="quiz3">Quiz3: What layout arranges its children in a single column or a single row on android?</string>
     <string name="quiz4">Quiz4: Who invented google?</string>
+    <string name="quiz4_right_message">Quiz4 is right!</string>
+    <string name="quiz4_wrong_message">Quiz4 is wrong!</string>
+    <string name="quiz3_right_message">Quiz3 is right!</string>
+    <string name="quiz3_wrong_message">Quiz3 is wrong!</string>
+    <string name="quiz2_right_message">Quiz2 is right!</string>
+    <string name="quiz2_wrong_message">Quiz2 is wrong!</string>
+    <string name="quiz1_right_message">Quiz1 is right!</string>
+    <string name="quiz1_wrong_message">Quiz1 is wrong!</string>
 </resources>

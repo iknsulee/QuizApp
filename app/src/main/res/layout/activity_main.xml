@@ -81,26 +81,6 @@
             android:layout_height="wrap_content"
             android:text="@string/quiz3" />
 
-        <!--<RadioGroup-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="wrap_content"-->
-            <!--android:layout_marginBottom="5dp"-->
-            <!--android:orientation="horizontal">-->
-
-            <!--<RadioButton-->
-                <!--android:id="@+id/radio_linear"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="LinearLayout" />-->
-
-            <!--<RadioButton-->
-                <!--android:id="@+id/radio_relative"-->
-                <!--android:layout_width="wrap_content"-->
-                <!--android:layout_height="wrap_content"-->
-                <!--android:text="RelativeLayout" />-->
-
-        <!--</RadioGroup>-->
-
         <EditText
             android:id="@+id/edit_text_quiz3_answer"
             android:layout_width="match_parent"
